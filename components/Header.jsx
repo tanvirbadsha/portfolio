@@ -52,7 +52,7 @@ function Header() {
                 key={index}
                 className="relative
               text-gray-200 hover:via-violet-600
-              dark:hover:text-violet-400 font-medium transition-colors duration-300 group"
+              dark:hover:text-violet-400 font-medium transition-colors duration-300 group cursor-pointer"
               >
                 {item}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-violet-600 group-hover:w-full transition-all duration-300"></span>
@@ -69,7 +69,7 @@ function Header() {
               delay: 1.3,
               duration: 0.8,
             }}
-            className="text-grey-700 dark:text-grey-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300"
+            className="text-grey-700 dark:text-grey-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300 cursor-pointer"
             href="#"
           >
             <FaGithub className="w-5 h-5" />
