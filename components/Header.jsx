@@ -53,6 +53,7 @@ function Header() {
                 className="relative
               text-gray-200 hover:via-violet-600
               dark:hover:text-violet-400 font-medium transition-colors duration-300 group cursor-pointer"
+                href={`#${item}`}
               >
                 {item}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-violet-600 group-hover:w-full transition-all duration-300"></span>
@@ -61,7 +62,7 @@ function Header() {
           )}
         </nav>
         {/* social icons- desktop */}
-        <div className="md:flex hidden items-center space-x-4">
+        <div className="md:flex hidden items-center space-x-4 ">
           <motion.a
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -69,10 +70,12 @@ function Header() {
               delay: 1.3,
               duration: 0.8,
             }}
-            className="text-grey-700 dark:text-grey-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300 cursor-pointer"
-            href="#"
+            className="text-gray-700 cursor-pointer dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300 text-white"
+            href="https://github.com/tanvirbadsha"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaGithub className="w-5 h-5" />
+            <FaGithub className="w-5 h-5 cursor-pointer" />
           </motion.a>
           <motion.a
             initial={{ opacity: 0, scale: 0.5 }}
@@ -81,8 +84,10 @@ function Header() {
               delay: 1.3,
               duration: 0.8,
             }}
-            className="text-grey-700 dark:text-grey-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300"
-            href="#"
+            className="text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300 text-white"
+            href="https://www.linkedin.com/in/tanvir-badsha-821037171/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaLinkedin className="w-5 h-5" />
           </motion.a>
@@ -93,8 +98,10 @@ function Header() {
               delay: 1.3,
               duration: 0.8,
             }}
-            className="text-grey-700 dark:text-grey-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300"
-            href="#"
+            className="text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300 text-white"
+            href="https://www.instagram.com/tanvirbadsha/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaSquareInstagram className="w-5 h-5" />
           </motion.a>
@@ -111,7 +118,7 @@ function Header() {
             stiffness: 100,
             damping: 15,
           }}
-          className="ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 text-violet-700 font-bold hover:from-violet-700 hover:to-purple-700 hover:text-white transition-all duration-500"
+          className="ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 text-violet-700 font-bold hover:from-violet-700 hover:to-purple-700 hover:text-white transition-all duration-500 cursor-pointer"
         >
           Hire Me
         </motion.button>

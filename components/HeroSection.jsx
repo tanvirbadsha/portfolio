@@ -39,7 +39,7 @@ function HeroSection() {
       </div>
       {/* Right Side */}
       <div className=" ">
-        <div className=" rounded-lg overflow-hidden">
+        <div className=" rounded-lg overflow-hidden mb-30">
           <motion.img
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
@@ -50,7 +50,7 @@ function HeroSection() {
               delay: 2,
               duration: 2,
             }}
-            className="w-full h-full object-cover relative bottom-30 z-100"
+            className="w-full h-full object-cover bottom-30"
             src="/images/my_photo.png"
             alt="my_photo"
           />
